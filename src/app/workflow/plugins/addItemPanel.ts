@@ -1,8 +1,11 @@
-const deepMix = require('@antv/util/lib/deep-mix');
-const each = require('@antv/util/lib/each');
-const createDOM = require('@antv/util/lib/dom/create-dom');
+import deepMix from '@antv/util/lib/deep-mix';
+
+import each from '@antv/util/lib/each';
+
+import createDOM from '@antv/util/lib/dom/create-dom';
 
 class AddItemPanel {
+    _cfgs: any;
 
     constructor(cfgs) {
         // debugger;

@@ -6,10 +6,10 @@
   nzTitle="工作流节点编辑"
   (nzOnClose)="close()"
 >
-  <app-start-panel *ngIf="selectedModel?.clazz == 'start'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-start-panel>
-  <app-approval-panel *ngIf="selectedModel?.clazz == 'userTask'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-approval-panel>
-  <app-end-panel *ngIf="selectedModel?.clazz == 'end'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-end-panel>
-  <app-branch-panel *ngIf="selectedModel?.clazz == 'exclusiveGateway'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-branch-panel>
+  <app-start-panel *ngIf="selectedModel['clazz'] == 'start'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-start-panel>
+  <app-approval-panel *ngIf="selectedModel['clazz'] == 'userTask'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-approval-panel>
+  <app-end-panel *ngIf="selectedModel['clazz'] == 'end'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-end-panel>
+  <app-branch-panel *ngIf="selectedModel['clazz'] == 'exclusiveGateway'" [selData]="selectedModel" (customClick)="onItemCfgChange($event['type'],$event['value'])"></app-branch-panel>
   <div class="footer">
     <button type="button" (click)="close()" class="ant-btn" style="margin-right: 8px;"><span>取消</span></button>
     <button type="button" (click)="close()" class="ant-btn ant-btn-primary"><span>确认</span></button>

@@ -7,12 +7,12 @@ import hoverAnchorActived from './hoverAnchorActived'
 import hoverNodeActived from './hoverNodeActived'
 import itemAlign from './itemAlign'
 export default function(G6){
-  clickSelected(G6);
-  deleteItem(G6);
-  dragNode(G6);
-  dragEdge(G6);
-  dragPanelItemAddNode(G6);
-  hoverAnchorActived(G6);
-  hoverNodeActived(G6);
-  itemAlign(G6);
+    clickSelected(G6);
+    deleteItem(G6);
+    dragNode(G6);
+    dragEdge(G6);
+    dragPanelItemAddNode(G6);
+    hoverAnchorActived(G6);
+    hoverNodeActived(G6);
+    itemAlign(G6);
 }
